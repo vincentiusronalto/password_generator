@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="container">
+        <!-- Page Content goes here -->
+
+    <form action="#">
+
+      <h3 class="bottom-margin top-top-margin">Password Generator Like A Boss</h3>
+      <p class="range-field">
+        <label for="digit" class="top-margin">Drag the Slider for the Password Length</label>
+        <input type="range" id="digit" min="5" max="200"class="top-margin" />
+        <label for="pass-length">Your Password Length</label>
+        <div id="pass-length" contentEditable="false">
+          please drag and scroll to get the value boss!
+        </div>
+      </p>
+
+      <h6 class="top-margin">Make sure to check one of these options</h6>
+      <p>
+      <input type="checkbox" id="lowercase-btn" checked="checked" />
+      <label for="lowercase-btn">Lowercase (abcd...)</label>
+    </p>
+    <p>
+      <input type="checkbox" id="uppercase-btn" checked="checked" />
+      <label for="uppercase-btn">Uppercase(ABCD...)</label>
+    </p>
+    <p>
+      <input type="checkbox" id="number-btn" checked="checked" />
+      <label for="number-btn">Number(1234...)</label>
+    </p>
+    <p>
+      <input type="checkbox" id="symbol-btn" checked="checked" />
+      <label for="symbol-btn">Symbols(!@#$%^*...)</label>
+    </p>
+
+       <h6 class="top-margin">Press Generate If you are ready</h6>
+       <a class="waves-effect waves-light btn" id="generate">generate</a>
+
+    <div class="wrapper-output">
+      <div id="output" class="top-margin inline-b bottom-margin" >
+        Your password will be in here
+      </div>
+
+
+    </div>
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo" id="stayhere">
+      <a href="#stayhere">Copy To clipboard</a>
+        <!-- <img src="assets/clippy.png" alt="Copy to clipboard" height="20" width="20"> -->
+
+    </button>
+
+    <!-- Target -->
+
+      <input style="cursor:default" id="foo" class="output-pass" value="Your password will be in here">
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
